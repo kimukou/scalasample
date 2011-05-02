@@ -1,3 +1,5 @@
+package app.scala
+
 /*
 import scala.reflect.BeanProperty
 

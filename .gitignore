@@ -1,0 +1,9 @@
+staging/*
+bin/*
+dist/*
+target/*
+CHANGE ME
+*.log
+*.iml
+*.ipr
+*.iws

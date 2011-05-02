@@ -1,3 +1,5 @@
+package app.scala
+
 import java.beans.PropertyChangeListener
 import javax.swing.JOptionPane
 
@@ -8,7 +10,7 @@ class ScalaSampleController {
       model.addPropertyChangeListener( "output", { evt ->
          if( !evt.newValue ) return
          doLater {
-            JOptionPane.showMessageDialog( app.appFrames[0],
+            JOptionPane.showMessageDialog( app.windowManager.windows[0],//app.appFrames[0],
                model.output, "Scala replied:", JOptionPane.INFORMATION_MESSAGE )
          }
       } as PropertyChangeListener)
